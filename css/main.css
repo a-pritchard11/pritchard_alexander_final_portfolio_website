@@ -97,3 +97,60 @@ input[type="range"]:focus::-moz-range-thumb{
   outline: 3px solid #2f307e;
   outline-offset: 0.125rem;
 }
+
+/*Other CSS*/
+
+header {
+    background-color: #0400ff;
+    align-items: center;
+}
+
+#main-nav {
+    grid-row: 1;
+}
+
+#main-nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   font-size: 20px;
+}
+
+#main-nav li a {
+    display: block;
+    text-align: center;
+    padding: 10px 0 10px 0;
+    color: #0011ff;
+}
+
+#main-nav li {
+   border-bottom: 1px solid #efefef;
+}
+
+#main-nav li:last-child {
+   margin-bottom: 40px;
+}
+
+#burger-con {
+   margin-top: 20px;
+   display: none;
+   margin-bottom: 20px;
+}
+
+#burger-con.slide-toggle {
+   display: block;
+}
+
+#title {
+  align-items: center;
+}
+
+.box {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.skill-box {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}

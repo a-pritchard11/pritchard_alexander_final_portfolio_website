@@ -8,10 +8,19 @@ const volumeSlider = document.querySelector("#change-vol");
 const fullScreen = document.querySelector("#full-screen");
 const videoControls = document.querySelector("#video-controls");
 
+const button = document.querySelector("#button");
+const burgerCon = document.querySelector("#burger-con");
+
 // If JS is loaded then let's remove the default controls
 player.controls = false;
 
 //functions
+
+function hamburgerMenu() {
+    burgerCon.classList.toggle("slide-toggle");
+    button.classList.toggle("expanded");
+}
+
 function playVideo() {
     player.play();
 }
@@ -61,3 +70,5 @@ videoControls.addEventListener("mouseleave", hideControls);
 
 player.addEventListener("mouseenter", showControls);
 player.addEventListener("mouseleave", hideControls);
+
+button.addEventListener("click", hamburgerMenu);

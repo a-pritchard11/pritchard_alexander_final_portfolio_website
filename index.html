@@ -9,8 +9,26 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="grid-con">
-        <section id="player-container" class="col-span-full">
+        <header>
+        <div class="grid-con center-grid-con">
+            <nav id="main-nav" class="col-span-full m-col-start-7 l-col-end-12">
+            <h2 class="visually-hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Work</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>    
+    </header>
+    <div class="grid-con center-grid-con">
+        <div id="title" class="box col-span-full l-col-start-1 l-col-end-8">
+            <h1>The Works Of Alexander Pritchard</h1>
+        </div>
+        <section id="player-container" class="col-span-full l-col-start-8 l-col-end-13">
             <video controls preload="metadata" poster="images/NameIntro.png">
                 <source src="videos/Pritchard_Alexander_NameIntro.mp4" type="video/mp4">
                 <p>Your browser does not support HTML5 Video.</p>
@@ -43,7 +61,47 @@
                 </button>
             </div>
         </section>
+        
     </div>
+    <section class="grid-con center-grid-con">
+        <h2 class="hidden">Biography</h2>
+        <div class="box col-span-full">
+            <h2>Biography</h2>
+        </div>
+        <div class="box col-span-full">
+            <p>Hello, my name is Alexander Pritchard, and I am a designer! I have a primary focus on UI design, and I also enjoy making motion graphics! <br>I have experience in a multitude of programs, such as Adobe Photoshop, Illustrator, After Effects, and Premiere. I also have experience using 3d modelling software such as Maya, ZBrush, and 3DSMax.<br> My goal is to become a designer of motion graphics and artistic UI elements, as I have a great love for clean, vibrant, and smooth animated visuals!</p>
+        </div>
+    </section>
+    <section class="grid-con center-grid-con">
+        <h2 class="hidden">Works</h2>
+        <div class="box col-span-full m-col-start-5 m-col-end-9">
+            <h2>Work Carousel Would go here</h2>
+        </div>
+        <div class="box col-span-full">
+            <img src="images/NameIntro.png" alt="placeholder image">
+        </div>
+        <div class="box col-span-full m-col-start-5 m-col-end-9">
+            <p>info about highlighted work goes here</p>
+        </div>
+    </section>
+    <section class="grid-con center-grid-con">
+        <h2 class="hidden">Skills</h2>
+        <div class="box col-span-full">
+            <h2>Skills</h2>
+        </div>
+        <div class="box skill-box col-span-full m-col-start-1 m-col-end-7 l-col-start-1 l-col-end-4">
+            <h2>Photoshop</h2>
+        </div>
+        <div class="box skill-box col-span-full m-col-start-7 m-col-end-13 l-col-start-4 l-col-end-7">
+            <h2>Illustrator</h2>
+        </div>
+        <div class="box skill-box col-span-full m-col-start-1 m-col-end-7 l-col-start-7 l-col-end-10">
+            <h2>Cinema4D</h2>
+        </div>
+        <div class="box skill-box col-span-full m-col-start-7 m-col-end-13 l-col-start-10 l-col-end-13">
+            <h2>After Effects</h2>
+        </div>
+    </section>
     <script src="js/main.js"></script>
 </body>
 </html>
