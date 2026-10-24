@@ -1,0 +1,99 @@
+/*Video player*/
+
+#player-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-controls {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-image: linear-gradient(to bottom, rgba(19, 19, 32, 0.63), rgba(13, 9, 51, 0.952));
+    display: flex;
+    transition: all .35s ease;
+}
+
+.video-controls.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+button {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+.player-icon {
+    color: white;
+    width: 32px;
+    height: 32px;
+    margin-left: 20px;
+}
+
+.volume {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 25rem;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #1c18ec;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #2f307e;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #2f307e;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #ec3818;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #832525;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb{
+  outline: 3px solid #2f307e;
+  outline-offset: 0.125rem;
+}
